@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+*   {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+article {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cards   {
+    width: 70%;
+    height: 67%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+.card:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 1rem 0 0 1rem;
+}
+.card:nth-child(2)  {
+    background-color: hsl(184, 100%, 22%);
+}
+.card:last-child  {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 1rem  1rem 0;
+}
+
+.card   {
+    width: 33.3%;
+    padding: 7%;
+    color: hsl(255,100%,100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2  {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+p   {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    letter-spacing: 0.0289rem;
+}
+button  {
+    padding: 6.5% 20%;
+    border-radius: 55rem;
+    border: none;
+}
+button:hover    {
+    border: 1px solid hsl(255,100%,100%);
+    background-color: transparent;
+    transition: all ease-in-out 300ms;
+    color: white !important;
+}
+.card:first-child   button{
+    color:hsl(31, 77%, 52%) ;
+}
+.card:nth-child(2)   button{
+    color:hsl(184, 100%, 22%) ;
+}
+.card:last-child   button{
+    color:hsl(179,100%,13%) ;
+}
+.attribution    {
+    margin-top: 10%;
+}
+@media only screen and (max-width:1350px) {
+    .cards  {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:1250px) {
+    .cards  {
+        width: 85%;
+    }
+}
+@media only screen and (max-width:1150px) {
+    .cards  {
+        width: 90%;
+    }
+}
+@media only screen and (max-width:1050px) {
+    .cards  {
+        width: 95%;
+    }
+}
+@media only screen and (max-width:900px) {
+    article {
+        height: fit-content;
+        width: 100%;
+    }
+    .cards  {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .card   {
+        width: 50%;
+    }
+    .card:first-child {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 1rem 1rem 0 0;
+    }
+    .card:last-child  {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0  1rem 1rem;
+    }
+
+
+}
+@media only screen and (max-width:650px) {
+    .card  {
+        width: 80%;
+    }
+}
